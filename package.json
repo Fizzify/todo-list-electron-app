@@ -1,0 +1,28 @@
+{
+  "name": "todo-list-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "todo-list-app",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "license": "LICENSE.md",
+      "uninstallDisplayName": "Todo-list-app"
+    }
+  }
+}
